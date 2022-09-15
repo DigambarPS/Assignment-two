@@ -1,31 +1,27 @@
 import './App.css';
-import ReactDom from "react-dom";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-//Components
-// import Navbar from "src/components/Navbar"
-
-//pages
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Products from "./pages/Products"
-import Support from "./pages/Support"
+import Navbar     from "./components/Navbar"
+import Background from "./components/Background"
+import Home       from "./pages/Home"
+import About      from "./pages/About"
+import Products   from "./pages/Products"
+import Support    from "./pages/Support"
+import NoPage     from "./pages/NoPage"
 
 function App() {
   return (
-    <>
     <BrowserRouter>
+    <Navbar />
+    <Background />
     <Routes>
-      <Route Path="/" element={<Home/>}/>
-      <Route Path="/" element={<About/>}/>
-      <Route Path="/" element={<Products/>}/>
-      <Route Path="/" element={<Support/>}/>
+      <Route path="/" element={<Home />} />
+      <Route Path="/about" element={<About />} />
+      <Route Path="/products" element={<Products />} />
+      <Route Path="/support" element={<Support />} />
+      <Route Path="*" element={<NoPage />} />
     </Routes>
     </BrowserRouter>
-    
-    <Home/>
-    </>
   );
 }
-
 export default App;
