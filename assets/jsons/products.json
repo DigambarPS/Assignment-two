@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Grand Piano", "price": 120000,"Rating":8.9, "image":"grand piano.jpg"
+    },
+    
+    {
+        "name": "Acoustic Guitar", "price": 8000,"Rating":9.1, "image":"acoustic Guitar.jpg"
+    },
+
+    {
+        "name": "Digital Piano", "price": 10000,"Rating":8.5, "image":"digital piano.jpg"
+    },
+
+    {
+        "name": "Violin", "price": 9000,"Rating":7.9, "image":"violin.jpg"
+    },
+
+    {
+        "name": "Flute", "price": 5000,"Rating":6.7, "image":"flute.jpg"
+    }
+]
